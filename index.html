@@ -40,13 +40,32 @@ body {
     color: #e0e0e0;
 }
 
+/* 🔥 ลายเซ็นเอฟเฟกต์ */
 .signature {
     margin-top: 40px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    font-size: 14px;
-    opacity: 0.8;
+    font-size: 16px;
+    font-weight: bold;
     border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.signature span {
+    color: #00eaff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00eaff,
+                     0 0 10px #00eaff,
+                     0 0 20px #00eaff;
+    }
+    to {
+        text-shadow: 0 0 10px #00ffff,
+                     0 0 20px #00ffff,
+                     0 0 30px #00ffff;
+    }
 }
 </style>
 
@@ -72,7 +91,7 @@ body {
     </div>
 
     <div class="signature">
-        By Create : อ้ายเพชรคนโสดประจำโลก
+        By Create : <span>อ้ายเพชรคนโสดประจำโลก</span>
     </div>
 
 </div>
